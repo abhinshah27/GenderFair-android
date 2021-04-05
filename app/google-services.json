@@ -1,0 +1,235 @@
+{
+  "project_info": {
+    "project_number": "537190387213",
+    "firebase_url": "https://genderfair-d0c1d.firebaseio.com",
+    "project_id": "genderfair-d0c1d",
+    "storage_bucket": "genderfair-d0c1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537190387213:android:72281f538b41ad9e",
+        "android_client_info": {
+          "package_name": "com.groops.fairspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537190387213-ncuflhpnif7hgtojijvbqkt7im1jj8kj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groops.fairspace",
+            "certificate_hash": "28ea471147b1abef252ecb719ac0646b2a1890a9"
+          }
+        },
+        {
+          "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUr51zSbO0dmseTriluYjTfHAKNKEku8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "537190387213-c666idmdpk93viliiitj6irqajar7qbm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groops.genderfair"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537190387213:android:5996d27b720c4982",
+        "android_client_info": {
+          "package_name": "com.groops.fairspace.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUr51zSbO0dmseTriluYjTfHAKNKEku8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "537190387213-c666idmdpk93viliiitj6irqajar7qbm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groops.genderfair"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537190387213:android:3a2265fc5b9debe8",
+        "android_client_info": {
+          "package_name": "com.groops.fairsquare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgCjeSimb0q1Q4W4-BCu93q5Vr_bYO64k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "537190387213-c666idmdpk93viliiitj6irqajar7qbm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groops.genderfair"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537190387213:android:aea8f24c6d1fe59e",
+        "android_client_info": {
+          "package_name": "com.groops.fairsquare.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD786RAuyFfIckpSvonvZzxtjDElgqQ87E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "537190387213-c666idmdpk93viliiitj6irqajar7qbm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groops.genderfair"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537190387213:android:4b9703ec6404b874",
+        "android_client_info": {
+          "package_name": "com.groops.genderfair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUr51zSbO0dmseTriluYjTfHAKNKEku8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "537190387213-c666idmdpk93viliiitj6irqajar7qbm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groops.genderfair"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537190387213:android:13733a4c1dec1885",
+        "android_client_info": {
+          "package_name": "com.groops.genderfair.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUr51zSbO0dmseTriluYjTfHAKNKEku8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537190387213-8r81s83ndn1qp5mfi79mue2mqm6oq90f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "537190387213-c666idmdpk93viliiitj6irqajar7qbm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groops.genderfair"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

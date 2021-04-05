@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2018. Highlanders LLC - All Rights Reserved
+  Unauthorized copying of this file, via any medium is strictly prohibited.
+  Proprietary and confidential.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="@dimen/activity_margin_md"
+                android:bottomLeftRadius="@dimen/activity_margin_md"
+                android:topLeftRadius="@dimen/activity_margin_md"
+                android:bottomRightRadius="@dimen/activity_margin_md"
+                android:topRightRadius="@dimen/activity_margin_md"
+                />
+            <stroke android:color="@color/colorAccent"
+                    android:width="1dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="@dimen/activity_margin_md"
+                android:bottomLeftRadius="@dimen/activity_margin_md"
+                android:topLeftRadius="@dimen/activity_margin_md"
+                android:bottomRightRadius="@dimen/activity_margin_md"
+                android:topRightRadius="@dimen/activity_margin_md"
+                />
+            <solid android:color="@color/colorAccent"/>
+        </shape>
+    </item>
+
+</selector>

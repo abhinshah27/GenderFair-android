@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/gf_toolbar_simple_back"
+        app:layout_constraintBottom_toTopOf="@+id/additional_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/additional_background"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/pages_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        tools:text="Shop Gender Fair"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/additional_background"
+        app:layout_constraintStart_toStartOf="@+id/additional_background"
+        app:layout_constraintTop_toTopOf="@+id/additional_background"
+        app:layout_constraintBottom_toTopOf="@id/titlesDivider"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <View
+        android:id="@+id/titlesDivider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/activity_margin_lg"
+        android:layout_marginEnd="@dimen/activity_margin_lg"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/shape_rectangle_white"
+        app:layout_constraintEnd_toEndOf="@+id/sectionTitle"
+        app:layout_constraintStart_toStartOf="@+id/sectionTitle"
+        app:layout_constraintTop_toBottomOf="@+id/sectionTitle"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:gravity="center"
+        tools:text="Airlines"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/additional_background"
+        app:layout_constraintEnd_toEndOf="@+id/additional_background"
+        app:layout_constraintStart_toStartOf="@+id/additional_background"
+        app:layout_constraintTop_toBottomOf="@+id/titlesDivider" />
+
+    <!-- INFO: 4/12/19    hides closeBtn: mockup error -->
+    <FrameLayout
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_margin_md"
+        android:background="@drawable/selector_button_round"
+        android:padding="@dimen/activity_margin_md"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_close_dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/pages_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/additional_background" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/subtitleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="titlesDivider,subtitle"
+        android:visibility="gone"/>
+
+    <include layout="@layout/custom_generic_progress_indicator_small_noconstr"
+        android:id="@+id/genericProgressIndicator"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

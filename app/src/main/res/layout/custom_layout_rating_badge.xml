@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ratingBadge"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    tools:layout_width="30dp"
+    tools:layout_height="30dp">
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_round_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/coloredBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/shape_round_badge_green"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toBottomOf="@id/border"
+        app:layout_constraintEnd_toEndOf="@id/border"
+        app:layout_constraintStart_toStartOf="@id/border"
+        app:layout_constraintTop_toTopOf="@id/border"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:fontFamily="@font/raleway_bold"
+        android:includeFontPadding="false"
+        tools:text="R"
+        app:autoSizeTextType="uniform"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="30sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toBottomOf="@id/coloredBackground"
+        app:layout_constraintEnd_toEndOf="@id/coloredBackground"
+        app:layout_constraintStart_toStartOf="@id/coloredBackground"
+        app:layout_constraintTop_toTopOf="@id/coloredBackground"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

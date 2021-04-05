@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:background="@color/black_12"
+    android:paddingTop="@dimen/activity_margin_md"
+    android:paddingStart="@dimen/activity_margin_md"
+    android:paddingEnd="@dimen/activity_margin_md"
+    android:paddingBottom="@dimen/activity_margin_md">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/custom_layout_profile_picture_shadow_tl" />
+
+        <include layout="@layout/share_selection_overlay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/channelName"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:maxLines="2"
+        android:fontFamily="@font/raleway"
+        android:includeFontPadding="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        tools:text="Starbuckssssssssssssssss" />
+
+</LinearLayout>

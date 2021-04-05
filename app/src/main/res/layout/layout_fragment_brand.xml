@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutBrandsRecView"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_lg"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/activity_margin"
+        android:paddingStart="@dimen/activity_margin_lg"
+        android:paddingEnd="@dimen/activity_margin_lg"
+        android:fontFamily="@font/raleway_bold"
+        android:textColor="@color/black_87"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/titlesDivider"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Procter &amp; Gamble" />
+
+    <View
+        android:id="@+id/titlesDivider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/activity_margin_lg"
+        android:layout_marginEnd="@dimen/activity_margin_lg"
+        android:layout_marginTop="@dimen/activity_margin_md"
+        android:layout_marginBottom="@dimen/activity_margin_md"
+        android:background="@drawable/shape_rect_orange"
+        app:layout_constraintEnd_toEndOf="@+id/companyName"
+        app:layout_constraintStart_toStartOf="@+id/companyName"
+        app:layout_constraintTop_toBottomOf="@+id/companyName"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle"
+        app:layout_constraintWidth_percent="1"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_margin_lg"
+        android:fontFamily="@font/raleway_medium"
+        android:gravity="center"
+        android:text="@string/brands"
+        android:textColor="@color/black_87"
+        android:textSize="14sp"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlesDivider"
+        app:layout_constraintBottom_toTopOf="@id/divider"/>
+
+    <include layout="@layout/custom_divider"
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"/>
+
+
+    <include
+        layout="@layout/layout_search_plus_rv"
+        android:id="@+id/searchRVContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

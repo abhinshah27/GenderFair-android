@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    tools:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/onboarding_title_4"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/onboarding_text_4"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="190dp" />
+
+    <FrameLayout
+        android:id="@+id/addPicture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_onboarding_picture"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide"
+        app:layout_constraintWidth_percent=".4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="100sp"
+            android:text="+"
+            android:textColor="@color/white"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/profilePicture"
+        layout="@layout/custom_layout_profile_picture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide"
+        app:layout_constraintWidth_percent=".4" />
+
+    <TextView
+        android:id="@+id/actionChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_button_action_onboarding"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="10dp"
+        android:text="@string/action_change"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilePicture" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="actionChange,profilePicture"
+        android:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <FrameLayout
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_margin_md"
+        android:layout_marginStart="@dimen/activity_margin_md"
+        android:background="@drawable/selector_button_round"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backArrowIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/back_arrow"
+            app:layout_constraintStart_toStartOf="@id/back_arrow"
+            app:layout_constraintTop_toTopOf="@id/back_arrow"
+            app:srcCompat="@drawable/layer_back_white" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/navigationAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/selector_button_action_onboarding"
+        android:fontFamily="@font/raleway_medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/state_list_text_onboarding_action"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/action_next" />
+
+    <FrameLayout
+        android:id="@+id/pages_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="?android:actionBarSize" />
+
+    <include layout="@layout/custom_generic_progress_indicator_small_noconstr"
+        android:id="@+id/genericProgressIndicator"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

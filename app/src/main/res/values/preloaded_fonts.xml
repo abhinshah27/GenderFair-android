@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2017. Highlanders LLC - All Rights Reserved
+  Unauthorized copying of this file, via any medium is strictly prohibited.
+  Proprietary and confidential.
+  -->
+
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/raleway</item>
+        <item>@font/raleway_bold</item>
+        <item>@font/raleway_light</item>
+        <item>@font/raleway_semibold</item>
+        <item>@font/raleway</item>
+        <item>@font/raleway_bold</item>
+        <item>@font/raleway_light</item>
+        <item>@font/raleway_medium</item>
+        <item>@font/raleway_semibold</item>
+    </array>
+</resources>

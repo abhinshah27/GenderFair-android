@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/onboarding_element_height"
+    android:elevation="2dp"
+    android:background="@drawable/shape_rectangle_rounded_border_white_md">
+
+    <EditText
+        android:id="@+id/field"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:includeFontPadding="false"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/activity_margin"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/custom_cursor_drawable_white"
+        android:textSize="18sp"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/raleway"
+        android:theme="@style/NormalWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<!--
+  Copyright (c) 2017. Highlanders LLC - All Rights Reserved
+  Unauthorized copying of this file, via any medium is strictly prohibited.
+  Proprietary and confidential.
+  -->
+
+<resources>
+    <string name="app_name" translatable="false">Fair Square-DEV</string>
+    <string name="google_maps_key" translatable="false">AIzaSyD786RAuyFfIckpSvonvZzxtjDElgqQ87E</string>
+
+    <string name="notif_channel_default">gf_dev_default</string>
+    <string name="notif_channel_default_description">Fair Square-DEV default notification channel</string>
+    <string name="notif_channel_chat_unsent">gf_dev_chat_unsent_messages</string>
+    <string name="notif_channel_chat_unsent_description">Fair Square-DEV notification channel for info notification about chat unsent messages</string>
+    <string name="notif_channel_chat">gf_dev_chat</string>
+    <string name="notif_channel_chat_description">Fair Square-DEV notification channel for incoming messages</string>
+    <string name="notif_channel_calls">gf_dev_calls</string>
+    <string name="notif_channel_calls_description">Fair Square-DEV notification channel for incoming and outgoing calls</string>
+</resources>

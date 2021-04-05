@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/globalSearchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/selector_button_round"
+        android:padding="@dimen/activity_margin_md"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/globalSearchBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|end"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_close_black" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/menu_entry_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_bold"
+        android:padding="10dp"
+        android:text="@string/home_menu_about"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/menu_entry_analytics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/menu_entry_analytics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_bold"
+        android:padding="10dp"
+        android:text="@string/home_menu_analytics"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/menu_entry_partners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_entry_about" />
+
+    <TextView
+        android:id="@+id/menu_entry_partners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_bold"
+        android:padding="10dp"
+        android:text="@string/home_menu_partners"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/menu_entry_services"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_entry_analytics" />
+
+    <TextView
+        android:id="@+id/menu_entry_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_bold"
+        android:padding="10dp"
+        android:text="@string/home_menu_services"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_entry_partners" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

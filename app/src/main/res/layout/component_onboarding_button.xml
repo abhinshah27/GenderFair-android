@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/onboarding_element_height"
+    android:layout_marginStart="@dimen/activity_margin"
+    android:layout_marginEnd="@dimen/activity_margin"
+    android:elevation="2dp"
+    android:textColor="@color/state_list_button_onboarding"
+    android:background="@drawable/selector_button_onboarding"
+    tools:text="OK"
+    android:fontFamily="@font/raleway"
+    android:includeFontPadding="false"/>
